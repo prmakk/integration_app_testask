@@ -21,6 +21,7 @@ const MainPage = () => {
             <p className={styles.subtitle}>Contact Fields</p>
 
             <div className={styles.table_container}>
+                <div className={styles.ellipse}></div>
                 <table>
                     <thead>
                         <tr>
@@ -55,8 +56,8 @@ const MainPage = () => {
                             <td>string</td>
                             <td>Full address associated with the per</td>
                         </tr>
-                        <tr>
-                            <td><pre>Street</pre></td>
+                        <tr className={styles.no_border}>
+                            <td>Street</td>
                             <td>address.streeet</td>
                             <td>string</td>
                             <td>Street address</td>

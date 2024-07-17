@@ -29,6 +29,22 @@
         position: relative;
         background: linear-gradient(152.67deg, #11183C -5.94%, #E7E9F5 55.4%, #343958 82.96%);
 
+        .ellipse{
+            width: 90vw;
+            max-width: 1160px;
+            position: absolute;
+            height: 247px;
+            background-color: #4C81D0;
+            opacity: 10%;
+            border-radius: 50%;
+            top: 20%;
+            box-shadow: 0 0 200px 200px #4C81D0;
+        }
+
+        .no_border td{
+            border: none;
+        }
+
         table {
             border-radius: inherit;
             background-color: #080A1E;
@@ -53,6 +69,7 @@
 
     .faq{
         margin-top: 93px;
+        padding-bottom: 46px;
 
         .title{
             margin-bottom: 40px;

@@ -14,20 +14,20 @@ const FaqQuestion = ({ icon, text }) => {
             <div className={styles.question}>
                 <div className={styles.info}>
                     <p>{icon}</p>
-                    <p>{text}</p>
+                    <button onClick={toggleQuestion}>{text}</button>
                 </div>
 
-                <SvgArrowR />
+                <SvgArrowR isOpen={isOpen}/>
             </div>
             {isOpen && (
                 <div className={styles.answer}>
-                    Test text, can be added by prop...
-                    <br />
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Eligendi nesciunt deserunt asperiores est sequi,
-                    consequuntur ducimus impedit dolorem quae ipsum eaque illo,
-                    commodi ullam nulla quia laudantium delectus. Assumenda,
-                    dolorem?
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Eligendi nesciunt deserunt asperiores est sequi,
+                        consequuntur ducimus impedit dolorem quae ipsum eaque
+                        illo, commodi ullam nulla quia laudantium delectus.
+                        Assumenda, dolorem?
+                    </p>
                 </div>
             )}
         </div>
