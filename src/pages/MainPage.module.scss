@@ -1,0 +1,76 @@
+.main{
+    color: #fff;
+
+    .header{
+        margin-top: 46px;
+
+        h1{
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: .35px;
+        }
+
+        p{
+            margin-top: 32px;
+            max-width: 725px;
+            line-height: 24.3px;
+        }
+    }
+
+    .subtitle{
+        margin-top: 42px;
+    }
+
+    .table_container {
+        margin-top: 42px;
+        border: 1px solid #2E2E2E;
+        border-radius: 10px;
+        padding: 1px;
+        position: relative;
+        background: linear-gradient(152.67deg, #11183C -5.94%, #E7E9F5 55.4%, #343958 82.96%);
+
+        table {
+            border-radius: inherit;
+            background-color: #080A1E;
+            font-size: 15px;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        th, td {
+            padding: 18px;
+            text-align: left;
+            border-bottom: 1px solid #1a1f39;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        th {
+            border: none;
+            color: #E6EDF1;
+        }
+    }
+
+    .faq{
+        margin-top: 93px;
+
+        .title{
+            margin-bottom: 40px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .questions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .table_container table{
+        overflow-x: scroll;
+        display: block;
+    }
+}

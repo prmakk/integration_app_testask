@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: #080A1E;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); //remove blue box while clicked on mobile phone
+}
+
+.App{
+    max-width: 1180px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 1180px) {
+    .App{
+        padding: 0px 20px;
+    }
+}
